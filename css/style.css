@@ -1,0 +1,12 @@
+a{text-decoration: none}
+.pink-bg{background-color:#de4178;color: #fff; }
+.pink-cl{color:#de4178 }
+.white-cl{color: #fff;}
+.gray-cl{color: gray}
+.radius{border-radius: 50%}
+.width-half{width: 50%;margin-left: 25%}
+img{display: block;width: 100% ;height: 100%;border: none}
+.bg-size{background-size: cover}
+#tour-view .slide-icon{font-size: 20em}
+#tour-view .slider{height:100%}
+#tour-view .slider-slide{text-align: center;}

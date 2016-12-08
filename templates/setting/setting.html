@@ -1,0 +1,86 @@
+<ion-view  view-title="设置">
+    <ion-content>
+        <div class="list card">
+            <a class="item  item-icon-right">
+                声音和亮度
+                <i class="icon ion-ios-arrow-down"></i>
+            </a>
+            <div class="list card">
+                <div class="item range">
+                    <i class="icon ion-volume-low"></i>
+                    <input type="range" name="volume">
+                    <i class="icon ion-volume-high"></i>
+                </div>
+
+                <div class="list">
+                    <div class="item range range-positive">
+                        <i class="icon ion-ios-sunny-outline"></i>
+                        <input type="range" name="volume" min="0" max="100" value="33">
+                        <i class="icon ion-ios-sunny"></i>
+                    </div>
+                </div>
+
+            </div>
+</div>
+            <div class="list card">
+                <ul class="list">
+
+                    <li class="item item-toggle">
+                        开启WIFI
+                        <label class="toggle toggle-assertive">
+                            <input type="checkbox">
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        关闭启动动画
+                        <label class="toggle toggle-assertive">
+                            <input type="checkbox">
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        开启弹幕
+                        <label class="toggle toggle-assertive">
+                            <input type="checkbox">
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        <div class="card">
+        <div class="list">
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    视屏清晰度
+                </div>
+                <select >
+                    <option class="pink-bg">高清</option>
+                    <option selected>标清</option>
+                    <option>一般</option>
+                </select>
+            </label>
+
+        </div>
+        </div>
+        <div class="card">
+        <ion-list>
+
+            <ion-checkbox ng-model="filter.blue">使用VPN加速</ion-checkbox>
+            <ion-checkbox ng-model="filter.yellow">跳过片头片尾</ion-checkbox>
+            <ion-checkbox ng-model="filter.pink">使用会员</ion-checkbox>
+
+        </ion-list>
+        </div>
+        <button class="button button-block pink-bg" ui-sref="tabs.home">
+            退出登录
+        </button>
+    </ion-content>
+</ion-view>

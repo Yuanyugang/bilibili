@@ -1,0 +1,33 @@
+<ion-view  view-title="今日推荐">
+    <ion-content>
+        <ion-slide-box does-continue="true" auto-play="true"
+                       slide-interval="2500" show-pager="false" style="height: 180px;">
+            <ion-slide>
+                <div class="box"><img src="images/m04.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/m02.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/m03.jpg"/></div>
+            </ion-slide>
+        </ion-slide-box>
+        <a class="item item-icon-left item-icon-right">
+            <i class="icon ion-fireball"></i>
+            热门视频
+            <i class="icon ion-ios-arrow-down"></i>
+        </a>
+        <ion-list show-delete="config.showDelete" show-reorder="config.showReorder">
+            <ion-item class="item-thumbnail-left item-remove-animate"
+                      ng-repeat="product in data" ui-sref="tabs.clothe_detail">
+                <img ng-src="{{product.imgsrc}}">
+                <h2>{{product.title}}</h2>
+                <p>{{product.desc}}</p>
+                <!--选项按钮-->
+                <ion-option-button class="button pink-cl" ng-click="edit(product)">分享</ion-option-button>
+                <ion-option-button class="button pink-bg" ng-click="share(product)">收藏</ion-option-button>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

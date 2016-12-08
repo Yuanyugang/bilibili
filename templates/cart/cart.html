@@ -1,0 +1,64 @@
+<ion-view  view-title="我的主页" >
+    <ion-content ng-controller="PopupCtrl">
+        <div class="bar bar-header ">
+            <button class="button pink-bg" ng-click="showPopup()"><i class="icon ion-navicon "></i></button>
+            <h1 class="title pink-cl">Header Buttons</h1>
+            <button class="button pink-bg"    ui-sref="tabs.setting"><i class="icon ion-gear-a"></i></button>
+        </div>
+        <div class="list "style="padding-top:44px;" >
+            <a class="item item-avatar  " style="padding-top:20px;padding-bottom:20px;">
+                <img src="./images/05.jpg">
+                <h2 class="pink-cl">hahah</h2>
+                <span class="pink-cl">Back off, man. I'm a scientist.</span>
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+        </div>
+        <a class="item  item-icon-right">
+            个人中心
+            <i class="icon ion-ios-arrow-down"></i>
+        </a>
+        <div class="row" style="text-align: center">
+            <a class="col"><i class="icon ion-android-download" style="font-size: 35px"></i><br/><span class="gray-cl">下载</span></a>
+            <a class="col"><i class="icon ion-android-time" style="font-size: 35px"></i><br/><span class="gray-cl">历史</span></a>
+            <a class="col"><i class="icon ion-ios-star" style="font-size: 35px"></i><br/><span class="gray-cl">收藏</span></a>
+            <a class="col"><i class="icon ion-android-radio-button-on" style="font-size: 35px"></i><br/><span class="gray-cl">关注</span></a>
+
+        </div>
+        <div class="row" style="text-align: center">
+            <a class="col"><i class="icon ion-grid" style="font-size: 40px"></i><br/><span class="gray-cl">钱包</span></a>
+            <a class="col"><i class="icon ion-ribbon-b" style="font-size: 40px"></i><br/><span class="gray-cl">积分</span></a>
+            <a class="col"><i class="icon ion-ios-game-controller-b" style="font-size: 40px"></i><br/><span class="gray-cl">游戏</span></a>
+            <a class="col"><i class="icon ion-android-color-palette" style="font-size: 40px"></i><br/><span class="gray-cl">主题</span></a>
+
+        </div>
+        <a class="item  item-icon-right">
+            我的消息
+            <i class="icon ion-ios-arrow-down"></i>
+        </a>
+        <div class="list card">
+
+            <a  class="item item-icon-left">
+                <i class="icon ion-chatbubble-working"></i>
+                我的私信
+                <span class="badge pink-cl">0</span>
+            </a>
+
+            <a  class="item item-icon-left">
+                <i class="icon ion-thumbsup"></i>
+                收到的赞
+                <span class="badge pink-cl">0</span>
+            </a>
+
+            <a  class="item item-icon-left">
+                <i class="icon ion-speakerphone"></i>
+                系统通知
+                <span class="badge pink-cl">0</span>
+            </a>
+        </div>
+
+        <script id="popup-template.html" type="text/ng-template">
+            <input ng-model="data.wifi" type="text" placeholder="Password">
+        </script>
+
+    </ion-content>
+</ion-view>
